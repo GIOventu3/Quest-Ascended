@@ -11,9 +11,9 @@ It handles all five quest types: play a game, stream a game, watch a video, join
 Two ways to run it. A single userscript you paste into DevTools, or a Vencord plugin that starts with Discord. Same engine, kept in sync, in this repo.
 
 > [!CAUTION]
-> **IF YOUR ACC GET WARNED/BANNED, I am not Responsible**
+> **IF YOUR ACC GETS WARNED/BANNED, I am not Responsible**
 >
-> **Discord has been enforcing against quest automation since April 2026.** People have had system messages land on their account after running automation, any automation, not only this. That is the trade you are making.
+> **Discord has been enforcing against quest automation since April 2026.** People have had system messages land on their account after running automation, any automation, not only this. That is the trade you are making. If you want to feel better, i've been using this for half a year and no stuff has happened.
 >
 
 ## Quick start, userscript

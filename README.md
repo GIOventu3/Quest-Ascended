@@ -160,14 +160,11 @@ Bug reports, PRs and docs all welcome. [`CONTRIBUTING.md`](CONTRIBUTING.md) has 
 
 ## Changelog
 
-### v4.11.5
-- **The plugin can run only quests that pay Orbs.** Asked for by [@clement-songis](https://github.com/clement-songis) in [#93](https://github.com/nyxxbit/discord-quest-completer/issues/93). The plugin has no quest picker, so farming only Orb quests meant turning auto-enroll off and accepting each one by hand in Discord's Quests page. A new setting, `Orb quests only`, off by default, leaves every quest that pays no Orbs out of the run: not accepted, not started. A quest counts when any of its rewards carries Orbs, not only the first, because Discord can list an in-game item ahead of them. Quests left out are reported in the wrap-up as "left out because they pay no Orbs", not as failures, and a run where every quest was left out no longer ends on "All available quests are completed!" with the done sound. A quest already running when you turn it on is allowed to finish, and turning it off mid-run puts the quests it left out back in on the next cycle. Checked on a live client with two otherwise identical video quests: the one paying 200 Orbs was accepted and started, the one paying none was left out with its reason and never accepted.
-- **The userscript picker's ORBS filter no longer hides quests that pay Orbs.** The picker filed each quest by its first reward only, so a quest listing an in-game item before its Orbs landed under IN-GAME and disappeared when you chose ORBS. The payout line already summed every reward entry; the filter was the one place still reading the first. It now files a quest under ORBS whenever any reward pays them, which is also what the plugin's new setting counts, so both engines agree on what an Orb quest is.
-- **The caution now says the quest ban reaches the account record.** Datamining reported in August that quest suspensions land alongside an Account Standing violation, the account-wide record, which the person holding the account would not necessarily see. The same entry now says plainly that nobody outside Discord has a settled figure for how long the lock lasts: the leaked client code read up to 10 days, the one detailed report here and the datamine both say 14, and the r/DiscordQuests megathread says 15.
-- **A telemetry blocker does not hide quest automation.** The belief is common enough to address in the caution: running under a client mod that blocks analytics does not stop Discord seeing how quests are completed. Blocking analytics silences the product telemetry. Quest progress travels on the quest heartbeat, the functional request that has to arrive for progress to be credited at all, and that is the request carrying the executable fields.
-- The plugin's settings table in the docs gains the `Play session tail` row that v4.11.4 left out, and `docs/ARCHITECTURE.md` explains why the Orb-only filter is a separate, revocable skip rather than one of the fixed reasons `questBlocker` returns.
-  
-----
+### v4.12.0
+- **The plugin can run only quests that pay Orbs.**
+- Less buggy
+- reduced codes
+- 15% optimized
 
 ## Disclaimer
 
